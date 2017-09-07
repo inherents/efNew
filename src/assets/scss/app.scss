@@ -1,0 +1,48 @@
+@charset "UTF-8";
+@import 'base';
+@import 'ui_list';
+@import "mixin";
+@import "variables";
+html {
+  overflow: hidden;
+  font-size: $fontbase * 1px;
+}
+
+body {
+  font-size: $fontbase * 1px;
+}
+
+ul ,li{
+  padding: 0;
+  list-style: none;
+}
+
+.navbar{
+  background-color: #0d6fb8;
+  color: #fff;
+  border: 0px;
+  a{
+    color: #fff;
+  }
+  .navbar-brand{
+    float: left;
+    padding: 10px 38px 10px 18px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    line-height: 20px;
+    background-color: #0d6fb8;
+    img{
+      height: 40px;
+      width: 124px;
+    }
+  }
+}
+.viewContainer{
+  position: absolute;
+  top: 60px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 100;
+}
